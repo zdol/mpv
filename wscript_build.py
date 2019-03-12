@@ -560,7 +560,7 @@ def build(ctx):
             '--codepage=65001' # Unicode codepage
         ]
 
-        for node in 'osdep/mpv.exe.manifest etc/mpv-icon.ico'.split():
+        for node in 'osdep/crates-mpv.exe.manifest etc/mpv-icon.ico'.split():
             ctx.add_manual_dependency(
                 ctx.path.find_node('osdep/mpv.rc'),
                 ctx.path.find_node(node))
