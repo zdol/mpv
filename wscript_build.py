@@ -526,7 +526,7 @@ def build(ctx):
         ( "osdep/macosx_events.m",               "cocoa" ),
         ( "osdep/macosx_menubar.m",              "cocoa" ),
         ( "osdep/macosx_touchbar.m",             "macos-touchbar" ),
-        ( "osdep/mpv.rc",                        "win32-executable" ),
+        ( "osdep/crates-mpv.rc",                        "win32-executable" ),
         ( "osdep/path-macosx.m",                 "cocoa" ),
         ( "osdep/path-unix.c"),
         ( "osdep/path-uwp.c",                    "uwp" ),
@@ -562,13 +562,13 @@ def build(ctx):
 
         for node in 'osdep/crates-mpv.exe.manifest etc/mpv-icon.ico'.split():
             ctx.add_manual_dependency(
-                ctx.path.find_node('osdep/mpv.rc'),
+                ctx.path.find_node('osdep/crates-mpv.rc'),
                 ctx.path.find_node(node))
 
         version = ctx.bldnode.find_node('version.h')
         if version:
             ctx.add_manual_dependency(
-                ctx.path.find_node('osdep/mpv.rc'),
+                ctx.path.find_node('osdep/crates-mpv.rc'),
                 version)
 
     if ctx.dependency_satisfied('cplayer') or ctx.dependency_satisfied('test'):

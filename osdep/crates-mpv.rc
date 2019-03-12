@@ -19,8 +19,8 @@
 #include "version.h"
 
 VS_VERSION_INFO VERSIONINFO
-    FILEVERSION 2, 0, 0, 0
-    PRODUCTVERSION 2, 0, 0, 0
+    FILEVERSION 0, 1, 8, 0
+    PRODUCTVERSION 0, 1, 8, 0
     FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
     FILEFLAGS 0
     FILEOS VOS__WINDOWS32
@@ -29,13 +29,13 @@ VS_VERSION_INFO VERSIONINFO
     {
         BLOCK "StringFileInfo" {
             BLOCK "000004b0" {
-                VALUE "Comments", "mpv is distributed under the terms of the GNU General Public License Version 2 or later."
-                VALUE "CompanyName", "mpv"
-                VALUE "FileDescription", "mpv"
+                VALUE "Comments", "crates-mpv is distributed under the terms of the GNU General Public License Version 2 or later."
+                VALUE "CompanyName", "Crates"
+                VALUE "FileDescription", "crates-mpv"
                 VALUE "FileVersion", VERSION
                 VALUE "LegalCopyright", MPVCOPYRIGHT
-                VALUE "OriginalFilename", "mpv.exe"
-                VALUE "ProductName", "mpv"
+                VALUE "OriginalFilename", "crates-mpv.exe"
+                VALUE "ProductName", "crates-mpv"
                 VALUE "ProductVersion", VERSION
             }
         }
@@ -47,4 +47,4 @@ VS_VERSION_INFO VERSIONINFO
 IDI_ICON1 ICON DISCARDABLE  "etc/mpv-icon.ico"
 
 // for some reason RT_MANIFEST does not work
-1 24 "mpv.exe.manifest"
+1 24 "crates-mpv.exe.manifest"
